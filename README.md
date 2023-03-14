@@ -11,7 +11,7 @@ Then, run docker command with "-v $PACKAGING_DIR:/buildd/sources/debian"
 
 Example:
 ```
-(host)$ docker run -v $PACKAGES_DIR:/buildd -v $KERNEL_DIR:/buildd/sources $PACKAGING_DIR:/buildd/sources/debian -it quay.io/droidian/build-essential:bullseye-amd64 bash
+(host)$ docker run -v $PACKAGES_DIR:/buildd -v $KERNEL_DIR:/buildd/sources -v $PACKAGING_DIR:/buildd/sources/debian -it quay.io/droidian/build-essential:bullseye-amd64 bash
 ```
 Continue from [Compiling](https://github.com/droidian/porting-guide/blob/master/kernel-compilation.md#compiling) section
 
